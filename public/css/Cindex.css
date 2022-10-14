@@ -1,0 +1,9 @@
+#divs {
+    overflow:scroll;
+    height:100%;
+    width:100%;
+  }
+  #divs table {
+   width:100%;
+   background-color:rgb(172, 172, 172);
+  }
