@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Api\BuzonController;
 use App\Http\Controllers\Api\chatsController;
+use App\Http\Controllers\Api\CiudadeController;
 use App\Http\Controllers\Api\comentariosController;
 use App\Http\Controllers\Api\departamentoController;
 use App\Http\Controllers\Api\EmpleoController;
@@ -11,6 +12,7 @@ use App\Http\Controllers\Api\InversionistaController as ApiInversionistaControll
 use App\Http\Controllers\Api\MultimediaController;
 use App\Http\Controllers\Api\NotificacioneController;
 use App\Http\Controllers\Api\PublicacioneController;
+use App\Http\Controllers\Api\ReaccioneController;
 use App\Http\Controllers\ChatController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -51,4 +53,6 @@ Route::apiResource("empleo", EmpleoController::class)->names("api.v1.empleo");
 Route::apiResource("publicacione", PublicacioneController::class)->names("api.v1.publicacione");
 Route::apiResource("multimedia", MultimediaController::class)->names("api.v1.multimedia");
 Route::apiResource("notificacione", NotificacioneController::class)->names("api.v1.notificacione");
+Route::apiResource("reaccione ", ReaccioneController::class)->names("api.v1.reaccione");
+Route::apiResource("ciudade", CiudadeController::class)->names("api.v1.ciudade");
 
