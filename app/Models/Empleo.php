@@ -11,8 +11,8 @@ class Empleo extends Model
 
     protected $guarded = [];
     protected $allowIncluded = ['user']; // Lista con las posibles relaciones que podemos enviar a travez de la URL
-    protected $allowFilter = ['id', 'evidencia' ,'mensaje'];
-    protected $allowSort = ['id', 'evidencia', 'mensaje'];
+    protected $allowFilter = ['id', 'evidencia' ,'mensaje_trabajo'];
+    protected $allowSort = ['id', 'evidencia', 'mensaje_trabajo'];
 
     use HasFactory;
     public function emprendimiento(){

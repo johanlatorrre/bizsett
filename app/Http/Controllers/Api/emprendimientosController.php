@@ -61,9 +61,9 @@ class emprendimientosController extends Controller
      * @param  \App\Models\Emprendimientos  $emprendimientos
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Emprendimientos $emprendimientos)
+    public function destroy(Emprendimientos $emprendimiento)
     {
-        $emprendimientos-> delete ();
-        return $emprendimientos;
+        $emprendimiento-> delete ();
+        return $emprendimiento;
     }
 }

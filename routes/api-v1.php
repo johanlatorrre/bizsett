@@ -7,6 +7,7 @@ use App\Http\Controllers\Api\comentariosController;
 use App\Http\Controllers\Api\departamentoController;
 use App\Http\Controllers\Api\EmpleoController;
 use App\Http\Controllers\Api\emprendimientosController;
+use App\Http\Controllers\Api\GeneroController;
 use App\Http\Controllers\Api\inversionistaController;
 use App\Http\Controllers\Api\InversionistaController as ApiInversionistaController;
 use App\Http\Controllers\Api\MultimediaController;
@@ -55,4 +56,5 @@ Route::apiResource("multimedia", MultimediaController::class)->names("api.v1.mul
 Route::apiResource("notificacione", NotificacioneController::class)->names("api.v1.notificacione");
 Route::apiResource("reaccione ", ReaccioneController::class)->names("api.v1.reaccione");
 Route::apiResource("ciudade", CiudadeController::class)->names("api.v1.ciudade");
+Route::apiResource("genero", GeneroController::class)->names("api.v1.genero");
 

@@ -13,8 +13,8 @@ class Comentario extends Model
     protected $guarded = [];
     protected $allowIncluded = ['user']; // Lista con las posibles relaciones que podemos enviar a travez de la URL
 
-    protected $allowFilter = ['id', 'comntario',];
-    protected $allowSort = ['id', 'mensaje', 'comentario' ];
+    protected $allowFilter = ['id', 'comentario',];
+    protected $allowSort = ['id', 'comentario', ];
     
     use HasFactory;
 

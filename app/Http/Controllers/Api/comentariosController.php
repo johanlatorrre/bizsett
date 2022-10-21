@@ -66,9 +66,9 @@ class comentariosController extends Controller
      * @param  \App\Models\Comentarios  $comentarios
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Comentarios $comentarios)
+    public function destroy(Comentarios $comentario)
     {
-        $comentarios-> delete ();
-        return $comentarios;
+        $comentario-> delete ();
+        return $comentario;
     }
 }
